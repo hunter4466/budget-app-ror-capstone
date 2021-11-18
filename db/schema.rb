@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2021_11_18_205250) do
 
   create_table "groups", force: :cascade do |t|
     t.string "name"
-    t.string "icon"
+    t.string "icon", default: "https://lorempixel.com/200/200/food/"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "user_id", null: false
