@@ -1,3 +1,7 @@
 <section> 
- <h1>Entities show</h1>
+ <ul>
+   <% @entities.each do |entity| %>
+     <li><%= entity[0].name %></li>
+   <% end %>
+ </ul>
 </section>

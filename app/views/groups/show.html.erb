@@ -1,3 +1,10 @@
 <section> 
- <h1>groups show</h1>
+  <ul>
+  <% @categories.each do |category|%>
+    <li>
+      <%= link_to category.name, entities_show_path(cat_id: category.id), class: 'add_food_btn' %>
+      <img src=<%=category.icon%> alt="Category Img">
+    </li>
+  <% end %>
+  </ul>
 </section>
