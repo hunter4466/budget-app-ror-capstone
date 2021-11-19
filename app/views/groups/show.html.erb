@@ -2,9 +2,11 @@
   <ul>
   <% @categories.each do |category|%>
     <li>
-      <%= link_to category.name, entities_show_path(cat_id: category.id), class: 'add_food_btn' %>
+      <h1><%= link_to category.name, entities_show_path(cat_id: category.id), class: 'add_food_btn' %></h1>
+      <h1>Total Transctions: <%=GroupEntity.where("group_id = #{category.id}").count %></h1>
       <img src=<%=category.icon%> alt="Category Img">
     </li>
   <% end %>
   </ul>
+  <%= link_to 'Add new category', groups_new_path(), class: 'add_category_btn' %>
 </section>

@@ -1,3 +1,8 @@
-<section> 
- <h1>groups new</h1>
+<section class="new_group_container">
+  <%= form_with model: @group, url: user_create_group_path(), method: :post, class: 'food_new_form' do |form| %>
+    <h2 class="post_new_add_group_indicator">Add Category: </h2>
+      <%= form.label :name, class: 'post_new_group_label' %>
+      <%= form.text_field :name, :required => true, class: 'post_new_group_input' %>
+      <%= form.submit "Add Category", class: 'post_new_group_btn' %>
+  <% end %>
 </section>

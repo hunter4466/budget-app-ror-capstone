@@ -1,3 +1,14 @@
-<section> 
- <h1>Entities new</h1>
+<section class="new_group_container">
+  <%= form_with model: @entity, url: user_create_entities_path(), method: :post, class: 'food_new_form' do |form| %>
+    <h2 class="post_new_add_group_indicator">Add Category: </h2>
+      <%= form.label :name, class: 'post_new_group_label' %>
+      <%= form.text_field :name, :required => true, class: 'post_new_group_input', value: @prev_data %>
+      <%= form.label :amount, class: 'post_new_group_label' %>
+      <%= form.number_field :amount, :required => true, class: 'post_new_group_input', value: @prev_data_two %>
+      <% @categories.each do |e| %>
+        <%= form.label e.name.parameterize.underscore.to_sym, class: 'post_new_group_label' %>
+        <%= form.check_box e.name.parameterize.underscore.to_sym %>
+      <% end%>
+      <%= form.submit "Add Category", class: 'post_new_group_btn' %>
+  <% end %>
 </section>
