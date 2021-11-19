@@ -4,7 +4,7 @@
       <%= form.label :name, class: 'post_new_group_label' %>
       <%= form.text_field :name, :required => true, class: 'post_new_group_input', value: @prev_data %>
       <%= form.label :amount, class: 'post_new_group_label' %>
-      <%= form.number_field :amount, :required => true, class: 'post_new_group_input', value: @prev_data_two %>
+      <%= form.number_field :amount, :required => true, step: 0.01, class: 'post_new_group_input', value: @prev_data_two %>
       <% @categories.each do |e| %>
         <%= form.label e.name.parameterize.underscore.to_sym, class: 'post_new_group_label' %>
         <%= form.check_box e.name.parameterize.underscore.to_sym %>

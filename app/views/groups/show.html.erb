@@ -3,7 +3,7 @@
   <% @categories.each do |category|%>
     <li>
       <h1><%= link_to category.name, entities_show_path(cat_id: category.id), class: 'add_food_btn' %></h1>
-      <h1>Total Transctions: <%=GroupEntity.where("group_id = #{category.id}").count %></h1>
+      <h1>Total Transactions: <%=GroupEntity.where("group_id = #{category.id}").count %></h1>
       <img src=<%=category.icon%> alt="Category Img">
     </li>
   <% end %>

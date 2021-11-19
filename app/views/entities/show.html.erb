@@ -1,4 +1,5 @@
-<section> 
+<section>
+<h1>Total amount: $<%= sprintf("%.2f",@sumatory) %></h1>
  <ul>
    <% @entities.each do |entity| %>
      <li><%= entity[0].name %></li>
