@@ -1,3 +1,5 @@
+@import '../fonts.scss';
+
 @mixin flexbox ($direction){
 display: flex;
 flex-direction: $direction;

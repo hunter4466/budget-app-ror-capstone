@@ -8,7 +8,7 @@
       <% @categories.each do |e| %>
         <%= form.label e.name.parameterize.underscore.to_sym, class: 'post_new_group_label' %>
         <%= form.check_box e.name.parameterize.underscore.to_sym %>
-      <% end%>
+      <% end %>
       <%= form.submit "Add Category", class: 'post_new_group_btn' %>
   <% end %>
 </section>

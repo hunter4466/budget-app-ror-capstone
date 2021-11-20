@@ -20,7 +20,6 @@ class EntitiesController < ApplicationController
 
     def create
         @categories = Group.where(user_id: current_user.id)
-        p 'did this'
         count = 0
         matcher = 0
         gruopidtosend = false
