@@ -16,6 +16,10 @@ In this project I developed a Transactions app,
 
 https://www.loom.com/share/d579f96b02f840978aefc19d59444cac
 
+## Link to live preview
+
+https://budget-app-ror-capstone.herokuapp.com/
+
 ## Built With
 
 - ![Ruby](https://img.shields.io/badge/Ruby-20232A?style=for-the-badge&logo=ruby&logoColor=61DAFB)
