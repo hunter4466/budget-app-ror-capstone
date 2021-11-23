@@ -47,6 +47,13 @@ https://budget-app-ror-capstone.herokuapp.com/
    ```sh
    npm install
    ```
+3. Run the database migration and seed
+
+   ```
+   rails db:create
+   rails db:migrate
+   rails db:seed
+   ```
 
 3. Run the web server
 
@@ -58,7 +65,8 @@ https://budget-app-ror-capstone.herokuapp.com/
 
    ```sh
    localhost:3000
-   ``
+   ```
+
 ### Test
 
 For testing the classes run:
@@ -75,16 +83,23 @@ For testing the classes run:
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mario-chois-5a13b6b6/)
 - Angelist: [@angelist](https://angel.co/u/mario-chois)
 
+
+## Credits
+
+Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
  
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/hunter4466/budget-app-ror-capstone/issues).
 
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
 
 ## 📝 License
 
