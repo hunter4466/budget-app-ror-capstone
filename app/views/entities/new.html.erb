@@ -8,7 +8,7 @@
       <%= show_svg('back.svg') %>
     <% end %>
 </div>
-  <%= form_with model: @entity, url: user_create_entities_path(), method: :post, class: 'food_new_form' do |form| %>
+  <%= form_with model: @entity, url: user_create_entities_path(cat_id: @categoryid), method: :post, class: 'food_new_form' do |form| %>
       <h1 class="name_label">Name</h1>
       <%= form.text_field :name, :required => true, class: 'name_transaction_input', value: @prev_data, placeholder: 'Name' %>
       <h1 class="amount_label">Ammount</h1>

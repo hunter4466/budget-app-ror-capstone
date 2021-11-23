@@ -33,7 +33,7 @@ class EntitiesController < ApplicationController
             end
         end
         if count == 0
-            redirect_to entities_new_url(prev_data: params[:entity][:name], prev_data_two: params[:entity][:amount])
+            redirect_to entities_new_url(prev_data: params[:entity][:name], prev_data_two: params[:entity][:amount], prev_data_three: params[:cat_id])
             flash.now[:error] = 'Record could not be created'
         else
             @entity = Entity.new
