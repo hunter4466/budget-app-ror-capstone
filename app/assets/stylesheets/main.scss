@@ -181,7 +181,9 @@ body {
 }
 
 // ------------------ CATEGORIES -----------------
-
+.category_section {
+    padding-bottom: 22vw;
+}
 .category_btn {
     display:flex;
     flex-direction: row;
@@ -245,7 +247,7 @@ body {
     @include customFont(ProximaLight, 5vw);
 }
 
-//------------- TRNASACTIONS ----------------------------
+//------------- TRANSACTIONS ----------------------------
 .transactions_title {
     width: 100vw;
     margin: 0vw;
@@ -275,16 +277,58 @@ body {
     @include customFont(ProximaLight, 5vw);
 }
 // ------------------ NEW TRANSACTION -----------------
+.new_group_container {
+    padding-bottom: 30vw;
+}
+.name_label {
+    @include customFont(ProximaLight, 5vw);
+}
+.amount_label {
+    @include customFont(ProximaLight, 5vw);
+}
+.cat_label {
+    @include customFont(ProximaLight, 5vw);
+}
+.name_transaction_input {
+    position: relative;
+    width: 100vw;
+    height: 11vw;
+    left: 0vw;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+    border-right-style: none;
+    border-left-style: none;
+    outline: none;
+}
+.amount_transaction_input {
+    position: relative;
+    width: 100vw;
+    height: 11vw;
+    left: 0vw;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+    border-right-style: none;
+    border-left-style: none;
+    outline: none;
+}
 
 .checkbox_list {
     display: flex;
     flex-direction: column;
-    width: 90vw;
+    width: 84vw;
     margin-left: 5vw;
     background-color: white;
     border-color: transparent;
     margin-left: 5vw;
-    margin-top: 30vw;
+    margin-top: 20vw;
     margin-bottom: 5vw;
     box-shadow: 1vw 1vw 5vw 1vw rgba(0, 0, 0, 0.1);
     padding: 3vw 3vw 0vw 3vw;

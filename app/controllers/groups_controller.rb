@@ -11,6 +11,7 @@ class GroupsController < ApplicationController
     def create
         @group = Group.new
         @group.name = params[:group][:name]
+        @group.icon = params[:group][:iconurl]
         @group.user_id = current_user.id
         if @group.save
             redirect_to groups_show_url

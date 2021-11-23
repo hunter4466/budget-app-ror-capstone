@@ -10,6 +10,7 @@
 </div>
   <%= form_with model: @group, url: user_create_group_path(), method: :post, class: 'food_new_form' do |form| %>
       <%= form.text_field :name, :required => true, class: 'user_name_register_input', placeholder: 'Name' %>
+      <%= form.text_field :iconurl, :required => true, class: 'user_email_register_input', placeholder: 'Place your icon url here' %>
       <div class="green_down_button">
         <%= form.submit 'CREATE', class: 'green_inner_btn' %>
       </div>

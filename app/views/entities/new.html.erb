@@ -9,9 +9,12 @@
     <% end %>
 </div>
   <%= form_with model: @entity, url: user_create_entities_path(), method: :post, class: 'food_new_form' do |form| %>
-      <%= form.text_field :name, :required => true, class: 'user_name_register_input', value: @prev_data, placeholder: 'Name' %>
-      <%= form.number_field :amount, :required => true, step: 0.01, class: 'user_email_register_input', value: @prev_data_two, placeholder: 'Amount' %>
+      <h1 class="name_label">Name</h1>
+      <%= form.text_field :name, :required => true, class: 'name_transaction_input', value: @prev_data, placeholder: 'Name' %>
+      <h1 class="amount_label">Ammount</h1>
+      <%= form.number_field :amount, :required => true, step: 0.01, class: 'amount_transaction_input', value: @prev_data_two, placeholder: 'Amount' %>
       <div class="checkbox_list">
+      <h1 class="cat_label">Choose category (At least one):</h1>
         <% @categories.each do |e| %>
         <div class="single_checkbox_container">
           <%= form.check_box e.name.parameterize.underscore.to_sym %>

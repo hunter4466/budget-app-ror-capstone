@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'in user food index page', js: true, type: :system do
   before(:all) do
-    user1 = User.create({ name: 'Foo', email: 'user1@mail.com', password: '111111', confirmed_at: '2021-01-01' })
+    user1 = User.create({ name: 'Mario', email: 'user1@mail.com', password: '111111', confirmed_at: '2021-01-01' })
     recipe1 = Recipe.create({ name: 'Sandwich', preparation_time: '1h', cooking_time: '2h', description: 'Make a Sandwich', user_id: user1.id })
     food1 = Food.create({ name: 'Ham', measurement_unit: 'Kg', price: 20, user_id: user1.id })
     RecipeFood.create({ quantity: 2, food_id: food1.id, recipe_id: recipe1.id })
