@@ -1,6 +1,6 @@
-# Recipe App
+# Rails Transactions app (ROR capstone)
 
-In this project we developed a Recipe App that allows people to create recipes, add food ingredients, generate a shopping list and make public recipies.
+In this project I developed a Transactions app, 
 
 ## Screenshots
 
@@ -23,7 +23,7 @@ In this project we developed a Recipe App that allows people to create recipes, 
 
 1. Clone the repo
 
-   git clone https://github.com/hunter4466/Recipe_app.git
+   git clone https://github.com/hunter4466/budget-app-ror-capstone.git
   
 
 ### Usage
@@ -67,17 +67,12 @@ For testing the classes run:
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mario-chois-5a13b6b6/)
 - Angelist: [@angelist](https://angel.co/u/mario-chois)
 
-👤 **Sebastián Muñoz**
-
-- GitHub: [@smunozmo](https://github.com/smunozmo)
-- Twitter: [@smunozmo](https://twitter.com/smunozmo)
-- Linkedin: [Sebastián Muñoz](https://www.linkedin.com/in/smunozmo/)
  
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/hunter4466/Recipe_app/issues).
+Feel free to check the [issues page](https://github.com/hunter4466/budget-app-ror-capstone/issues).
 
 ## Show your support
 
@@ -85,4 +80,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/hunter4466/Blog_app/blob/development/LICENSE) licensed.
+This project is [MIT](https://github.com/hunter4466/budget-app-ror-capstone/blob/development/LICENSE) licensed.

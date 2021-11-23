@@ -1,14 +1,26 @@
 <section class="new_group_container">
+<h2 class="login_title">NEW TRANSACTION</h2>
+<div class="hamburger_div">
+  <%= show_svg('search.svg') %>
+</div>
+<div class="back_div">
+    <%= link_to entities_show_path(@categoryid) do %>
+      <%= show_svg('back.svg') %>
+    <% end %>
+</div>
   <%= form_with model: @entity, url: user_create_entities_path(), method: :post, class: 'food_new_form' do |form| %>
-    <h2 class="post_new_add_group_indicator">Add Category: </h2>
-      <%= form.label :name, class: 'post_new_group_label' %>
-      <%= form.text_field :name, :required => true, class: 'post_new_group_input', value: @prev_data %>
-      <%= form.label :amount, class: 'post_new_group_label' %>
-      <%= form.number_field :amount, :required => true, step: 0.01, class: 'post_new_group_input', value: @prev_data_two %>
-      <% @categories.each do |e| %>
-        <%= form.label e.name.parameterize.underscore.to_sym, class: 'post_new_group_label' %>
-        <%= form.check_box e.name.parameterize.underscore.to_sym %>
-      <% end %>
-      <%= form.submit "Add Category", class: 'post_new_group_btn' %>
+      <%= form.text_field :name, :required => true, class: 'user_name_register_input', value: @prev_data, placeholder: 'Name' %>
+      <%= form.number_field :amount, :required => true, step: 0.01, class: 'user_email_register_input', value: @prev_data_two, placeholder: 'Amount' %>
+      <div class="checkbox_list">
+        <% @categories.each do |e| %>
+        <div class="single_checkbox_container">
+          <%= form.check_box e.name.parameterize.underscore.to_sym %>
+          <%= form.label e.name.parameterize.underscore.to_sym, class: 'checkbox_label' %>
+        </div>
+        <% end %>
+      </div>
+      <div class="green_down_button">
+        <%= form.submit 'ADD TRANSACTION', class: 'green_inner_btn' %>
+      </div>
   <% end %>
 </section>

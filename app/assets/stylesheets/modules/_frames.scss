@@ -1,8 +1,8 @@
 @import '../fonts.scss';
 
 @mixin flexbox ($direction){
-display: flex;
-flex-direction: $direction;
+    display: flex;
+    flex-direction: $direction;
 }
 
 @mixin centerHor ($width) {

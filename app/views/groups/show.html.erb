@@ -1,12 +1,21 @@
-<section> 
-  <ul>
+<section>
+<h2 class="login_title">CATEGORIES</h2>
+<div class="hamburger_div">
+  <%= show_svg('search.svg') %>
+</div>
+<div class="back_div">
+  <%= show_svg('hamburger.svg') %>
+</div>
   <% @categories.each do |category|%>
-    <li>
-      <h1><%= link_to category.name, entities_show_path(cat_id: category.id), class: 'add_food_btn' %></h1>
-      <h1>Total Transactions: <%=GroupEntity.where("group_id = #{category.id}").count %></h1>
-      <img src=<%=category.icon%> alt="Category Img">
-    </li>
+    <%= link_to entities_show_path(cat_id: category.id), class: 'category_btn' do %>
+      <img src=<%=category.icon%> alt="Category Img" class="cat_img">
+      <div class="cat_info_box">
+        <h1 class="cat_name"><%= category.name %></h1>
+        <h1 class="cat_trans">Transactions: <%=GroupEntity.where("group_id = #{category.id}").count %></h1>
+      </div>
+    <% end %>
   <% end %>
-  </ul>
-  <%= link_to 'Add new category', groups_new_path(), class: 'add_category_btn' %>
+    <%= link_to groups_new_path(), type: 'GET', class: 'green_down_button' do %>
+      <h1 class="green_inner_btn">ADD NEW CATEGORY</h1>
+    <% end %>
 </section>

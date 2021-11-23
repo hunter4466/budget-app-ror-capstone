@@ -1,11 +1,13 @@
 <div class="recipe_new_main_container">
 <h2 class="login_title">LOGIN</h2>
-<div class="back_div"><%= show_svg('back.svg') %></div>
-
+<div class="back_div">
+    <%= link_to splash_show_path() do %>
+      <%= show_svg('back.svg') %>
+    <% end %>
+</div>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'E-mail', class: 'user_email_input' %>
     <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password', class: 'user_password_input' %>
     <%= f.submit "Log in", class: 'log_in_btn' %>
-
 <% end %>
 </div>

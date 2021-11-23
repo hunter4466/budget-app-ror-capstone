@@ -12,6 +12,7 @@ class EntitiesController < ApplicationController
     end
 
     def new
+        @categoryid = params[:prev_data_three]
         @prev_data = params[:prev_data]
         @prev_data_two = params[:prev_data_two]
         @categories = Group.where(user_id: current_user.id)
