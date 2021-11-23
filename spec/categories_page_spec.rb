@@ -12,7 +12,8 @@ RSpec.describe 'in user food index page', js: true, type: :system do
     transaction4 = Entity.create({ name: 'Train Ticket', created_at: '2021-01-01', updated_at: '2021-01-01', user_id: user1.id, amount: 4.35 })
     transaction5 = Entity.create({ name: 'Car gasoline', created_at: '2021-01-01', updated_at: '2021-01-01', user_id: user1.id, amount: 80.78 })
     transaction6 = Entity.create({ name: 'Motorbike Ride', created_at: '2021-01-01', updated_at: '2021-01-01', user_id: user1.id, amount: 15.20 })
-    transaction7 = Entity.create({ name: 'Ice cream at the park', created_at: '2021-01-01', updated_at: '2021-01-01', user_id: user1.id, amount: 4.90 })
+    transaction7 = Entity.create({ name: 'Ice cream at the park', created_at: '2021-01-01', updated_at: '2021-01-01', user_id: user1.id,
+                                   amount: 4.90 })
     transaction8 = Entity.create({ name: 'Baloons for my kid', created_at: '2021-01-01', updated_at: '2021-01-01', user_id: user1.id, amount: 1.50 })
     transaction9 = Entity.create({ name: 'Street pop corn', created_at: '2021-01-01', updated_at: '2021-01-01', user_id: user1.id, amount: 3.50 })
     GroupEntity.create({ created_at: '2021-01-01', updated_at: '2021-01-01', group_id: group1.id, entity_id: transaction1.id })
