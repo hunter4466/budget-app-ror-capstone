@@ -1,0 +1,16 @@
+<div class="recipe_new_main_container">
+<h2 class="login_title">REGISTER</h2>
+<div class="back_div">
+    <%= link_to splash_show_path() do %>
+      <%= show_svg('back.svg') %>
+    <% end %>
+</div>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+    <%= f.text_field :name, class: 'user_name_register_input', placeholder: 'Name'  %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'E-mail', class: 'user_email_register_input'  %>
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password', class: 'user_password_register_input' %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Repeat-password', class: 'user_repeat_password_input'  %>
+    <%= f.submit "Sign up", class: 'log_in_btn' %>
+<% end %>

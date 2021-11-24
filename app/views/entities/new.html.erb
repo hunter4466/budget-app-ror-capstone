@@ -1,0 +1,29 @@
+<section class="new_group_container">
+<h2 class="login_title">NEW TRANSACTION</h2>
+<div class="hamburger_div">
+  <%= show_svg('search.svg') %>
+</div>
+<div class="back_div">
+    <%= link_to entities_show_path(@categoryid) do %>
+      <%= show_svg('back.svg') %>
+    <% end %>
+</div>
+  <%= form_with model: @entity, url: user_create_entities_path(cat_id: @categoryid), method: :post, class: 'food_new_form' do |form| %>
+      <h1 class="name_label">Name</h1>
+      <%= form.text_field :name, :required => true, class: 'name_transaction_input', value: @prev_data, placeholder: 'Name' %>
+      <h1 class="amount_label">Ammount</h1>
+      <%= form.number_field :amount, :required => true, step: 0.01, class: 'amount_transaction_input', value: @prev_data_two, placeholder: 'Amount' %>
+      <div class="checkbox_list">
+      <h1 class="cat_label">Choose category (At least one):</h1>
+        <% @categories.each do |e| %>
+        <div class="single_checkbox_container">
+          <%= form.check_box e.name.parameterize.underscore.to_sym %>
+          <%= form.label e.name.parameterize.underscore.to_sym, class: 'checkbox_label' %>
+        </div>
+        <% end %>
+      </div>
+      <div class="green_down_button">
+        <%= form.submit 'ADD TRANSACTION', class: 'green_inner_btn' %>
+      </div>
+  <% end %>
+</section>

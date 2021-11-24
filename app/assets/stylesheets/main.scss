@@ -1,0 +1,343 @@
+@import './modules/frames.scss';
+@import './modules/buttons.scss';
+@import './fonts.scss';
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.logo_div {
+    position: absolute;
+    top: 20vh;
+    width: 80vw;
+    left: 10vw;
+}
+
+.to_log_in_btn {
+    position: absolute;
+    left: 3vw;
+    bottom: 12vw;
+    width: 94vw;
+    height: 8vw;
+    background-color: #3778c2;
+    text-align: center;
+    text-decoration: none;
+    @include customFont(ProximaLight, 5vw);
+    padding-top: 3vw;
+    color: white;
+}
+.to_sign_in_btn {
+    position: absolute;
+    left: 0vw;
+    bottom: 0px;
+    width: 100vw;
+    height: 10vw;
+    text-align: center;
+    text-decoration: none;
+    @include customFont(ProximaLight, 5vw);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+// ------------------- Log-in ---------------------
+
+.login_title {
+    margin: 0vw;
+    position: absolute;
+    width: 100vw;
+    height: 10vw;
+    top: 0vh;
+    left: 0vw;
+    padding-top: 17px;
+    text-align: center;
+    @include customFont(ProximaLight, 5vw);
+    background-color: #3778c2;
+    color:white;
+}
+
+.back_div {
+    position: absolute;
+    width: 6vw;
+    top: 5vw;
+    left: 3vw;
+}
+
+.hamburger_div {
+    position: absolute;
+    width: 6vw;
+    top: 5vw;
+    left: 88vw;
+}
+
+.user_email_input {
+    position: absolute;
+    width: 100vw;
+    height: 11vw;
+    left: 0vw;
+    top: 18vw;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+    border-right-style: none;
+    border-left-style: none;
+    outline: none;
+}
+
+.user_password_input {
+    position: absolute;
+    width: 100vw;
+    height: 11vw;
+    left: 0vw;
+    top: 30vw;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+    border-right-style: none;
+    border-left-style: none;
+    outline: none;
+}
+.log_in_btn {
+    position: absolute;
+    width: 20vw;
+    top: 5vw;
+    left: 78vw;
+    @include customFont(ProximaLight, 5vw);
+    background: transparent;
+    border-style: none;
+    color: white;
+}
+.user_name_register_input {
+    position: absolute;
+    width: 100vw;
+    height: 11vw;
+    left: 0vw;
+    top: 19vw;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+    border-right-style: none;
+    border-left-style: none;
+    outline: none;
+}
+.user_email_register_input {
+    position: absolute;
+    width: 100vw;
+    height: 11vw;
+    left: 0vw;
+    top: 30vw;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+    border-right-style: none;
+    border-left-style: none;
+    outline: none;
+}
+.user_password_register_input {
+    position: absolute;
+    width: 100vw;
+    height: 11vw;
+    left: 0vw;
+    top: 41vw;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+    border-right-style: none;
+    border-left-style: none;
+    outline: none;
+}
+.user_repeat_password_input {
+    position: absolute;
+    width: 100vw;
+    height: 11vw;
+    left: 0vw;
+    top: 52vw;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+    border-right-style: none;
+    border-left-style: none;
+    outline: none;
+}
+
+// ------------------ CATEGORIES -----------------
+.category_section {
+    padding-bottom: 22vw;
+}
+.category_btn {
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    width: 90vw;
+    height: 22vw;
+    background-color: white;
+    border-color: transparent;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+    box-shadow: 1vw 1vw 5vw 1vw rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.cat_img {
+    width: 18vw;
+    height: 18vw;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    
+}
+.cat_info_box {
+    width: 60vw;
+    margin-top: 0vw;
+    margin-left: 5vw;
+    text-align: center;
+}
+.cat_name {
+    width: 55vw;
+    @include customFont(ProximaBold, 5vw);
+    color: rgba(0, 0, 0, 0.6)
+}
+.cat_trans {
+    width: 55vw;
+    @include customFont(ProximaLight, 4vw);
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6)
+}
+.green_down_button {
+    position: fixed;
+    bottom: 5vw;
+    width: 90vw;
+    height: 20vw;
+    background-color: #5fb523;
+    margin-left: 5vw;
+    border-style: none;
+    text-decoration: none;
+}
+.green_inner_btn {
+    width: 84vw;
+    height: 9vw;
+    margin-top: 4vw;
+    margin-left: 3vw;
+    padding-top: 3vw;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    @include customFont(ProximaLight, 5vw);
+}
+
+//------------- TRANSACTIONS ----------------------------
+.transactions_title {
+    width: 100vw;
+    margin: 0vw;
+    text-align: center;
+    @include customFont(ProximaLight, 5vw);
+}
+.transactions_ul {
+    list-style: none;
+    padding: 0vw;
+}
+.transactions_ul li {
+    list-style: none;
+}
+
+.transaction_container {
+    position: relative;
+    width: 90vw;
+    height: 8vw;
+    background-color: white;
+    border-color: transparent;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+    box-shadow: 1vw 1vw 5vw 1vw rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 2vw;
+    @include customFont(ProximaLight, 5vw);
+}
+// ------------------ NEW TRANSACTION -----------------
+.new_group_container {
+    padding-bottom: 30vw;
+}
+.name_label {
+    @include customFont(ProximaLight, 5vw);
+}
+.amount_label {
+    @include customFont(ProximaLight, 5vw);
+}
+.cat_label {
+    @include customFont(ProximaLight, 5vw);
+}
+.name_transaction_input {
+    position: relative;
+    width: 100vw;
+    height: 11vw;
+    left: 0vw;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+    border-right-style: none;
+    border-left-style: none;
+    outline: none;
+}
+.amount_transaction_input {
+    position: relative;
+    width: 100vw;
+    height: 11vw;
+    left: 0vw;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.4);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.4);
+    border-right-style: none;
+    border-left-style: none;
+    outline: none;
+}
+
+.checkbox_list {
+    display: flex;
+    flex-direction: column;
+    width: 84vw;
+    margin-left: 5vw;
+    background-color: white;
+    border-color: transparent;
+    margin-left: 5vw;
+    margin-top: 20vw;
+    margin-bottom: 5vw;
+    box-shadow: 1vw 1vw 5vw 1vw rgba(0, 0, 0, 0.1);
+    padding: 3vw 3vw 0vw 3vw;
+}
+.single_checkbox_container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3vw;
+}
+.checkbox_label {
+    @include customFont(ProximaLight, 5vw);
+}

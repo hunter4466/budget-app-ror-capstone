@@ -1,0 +1,18 @@
+
+  @font-face {
+    font-family: 'ProximaBold';
+    src: url('./fonts/Proxima-Nova-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'ProximaLight';
+    src: url('./fonts/Proxima-Nova-Light.ttf');
+  }
+  
+  @mixin customFont ($font, $fontsize) {
+    font-family: $font, serif;
+    font-size: $fontsize;
+  }
+  @mixin customFontBtn ($font, $fontsize) {
+    font-family: $font, serif;
+    font-size: $fontsize;
+  }

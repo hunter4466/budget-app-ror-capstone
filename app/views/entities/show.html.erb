@@ -1,0 +1,20 @@
+<section class="category_section">
+<h2 class="login_title">TRANSACTIONS</h2>
+<div class="hamburger_div">
+  <%= show_svg('search.svg') %>
+</div>
+<div class="back_div">
+    <%= link_to splash_show_path() do %>
+      <%= show_svg('back.svg') %>
+    <% end %>
+</div>
+<h1 class="transactions_title">Total amount: $<%= sprintf("%.2f",@sumatory) %></h1>
+ <div class="transactions_ul">
+   <% @entities.each do |entity| %>
+     <h1 class="transaction_container"><%= entity[0].name %>: $<%= entity[0].amount %></h1>
+   <% end %>
+ </div>
+ <%= link_to entities_new_path(prev_data: ' ', prev_data_two: 0, prev_data_three: @cat_id), type: 'GET', class: 'green_down_button' do %>
+      <h1 class="green_inner_btn">NEW TRANSACTION</h1>
+  <% end %>
+</section>
